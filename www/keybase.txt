@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/andrewkirwin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andrewkirwin.co.uk
+  * I am andrewkirwin (https://keybase.io/andrewkirwin) on keybase.
+  * I have a public key with fingerprint 51D1 5D5E 4F6E A8CA 972C  F8E7 9BFA 5827 99AD 328D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101133762ffb4a317e1345a3e7160bd935d0bc818ee12a64de5981a57df05b92b300a",
+      "fingerprint": "51d15d5e4f6ea8ca972cf8e79bfa582799ad328d",
+      "host": "keybase.io",
+      "key_id": "9bfa582799ad328d",
+      "kid": "0101133762ffb4a317e1345a3e7160bd935d0bc818ee12a64de5981a57df05b92b300a",
+      "uid": "480d0a927f9e6c3f63208d0c85645219",
+      "username": "andrewkirwin"
+    },
+    "merkle_root": {
+      "ctime": 1605698908,
+      "hash_meta": "09de84a41857c8a95725eaadfe4e4c0819f95343d1828b5a94b4634605f2238d",
+      "seqno": 18157562
+    },
+    "revoke": {
+      "sig_ids": [
+        "50ba21bb090c67e1f9fb1751fb7282b07f846b845fef97c1a1072b8833ee83ed0f"
+      ]
+    },
+    "service": {
+      "hostname": "andrewkirwin.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1605698936,
+  "expire_in": 157680000,
+  "prev": "2fc08cb4624291aa629abb2ab62a47f899f122001207ef42d712589baf680f90",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMK8AnicrZNdaB1FGIZP2jTi0RRBvTAihrUtGJLTmdmZ3ZmTii0KgpBiqyKltseZ
+nW9OlpOcPe5ufvoTiOIPtaKRYjS9sLRWvAgehVgtpZJjrKVtvBBTCBXtRXvRq+IP
+bS2ijbMHRZBeujfLzr7f+73fMzMn2pfn8i2H1h45tKl250zL/Nz4UK50ZMXoLkdF
+eodT3OVUoPmCAQ1JWqqE2ik6CCOMXdf3iDGKShf7gF3KpAs+9pDSwmUaqYBjDoCJ
+9KgGJjiWzNcGMSWIchGSTrdjwmoZ4locVlNry7DGTDOgxgPJAyl8EhgOvlBGMk58
+IaR2Cde2sD9KsgobTskECmFk1+xHqRnvJvr/OfdQ045ypJEUxDcCvMA1nksQ1yjg
+zKOMYJEJE4irchCsWlZ1DCOVMB4Jq85YtzMIcWUASnEUpRngIA0zmc3BPMEF4nZI
+mfSXBiGVWXShgVNJMWd+wKVgPmEgpTZAgQaIY2EEc6mrMSdcMSmoop5LrZshxG0y
+SOD5amQ7cMx85hEbIYbhqAJZ9yQsW3aJU9zqMKQkwUohgQLPAjLCKOwzbJRPOFHI
+N5x6ilNmwAg/wBIjnyjOXReAu6CRcbaNZd3i4TBommebdRMIhSAqDFVssFocpVEQ
+Ddj//WlaS4oZnnRHLSsYAVX626qkwqq2B8ZWDEOchFHVDmOV/yHnet0OjNbCGEph
+pmC+x5F9sj4wbC2JsbwCi4dQIrCUHhFSKSKVRyS10wlhMCEIYYJ8MJRoHxPGhZLG
+GhmB/kVpO6WybC0tvqpMh2JwxuYaz7bmWvK5thXLsouUy996xz/X67frtyxtaC/I
+D+/u2jo+uTix8tcN448s3PPuuQuffA8HF968LF/Y1vf+so/a2O2jZ1/JN/Krvp2b
+71kz/VNZqjVXjq176IHG7kD+/k76uHnvuYWd9I3Tj31z+uyerq6ri0s766s/8E59
+Wnv7yfGfJ94q7JNnXmf6wFTv8a/OnZy+r+OL8/VGT31ybW86u5xfbtn4YrG1rePk
+/h9ac5N7b+w/sXL2wbsW79/T1xPsfeazA790PvrxhY31h9fzmflLL81eKdf6V23/
+kgyu33L03mtfi81PvUa9a+c7L02Vj383f6wU/Phy642+xm1LExcPv2rIwetX+9r3
+/bG69/OpTVO7L3a2TT89s27znx35J+pb5vBfBw+DBQ==
+=6Wmb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andrewkirwin
+
+==================================================================

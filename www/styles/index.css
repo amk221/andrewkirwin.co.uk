@@ -1,0 +1,70 @@
+:root {
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  --current-colour: #d0a948;
+  --white: #e1e1e1;
+  --gray: #272c35;
+  --gray-dark: #212730;
+  --gray-light: #323843;
+}
+
+::selection {
+  color: var(--current-colour);
+}
+
+.intro {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--gray);
+  background-image: linear-gradient(
+    220deg,
+    var(--gray-dark),
+    var(--gray),
+    var(--gray-light)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--white);
+  font-size: 48px;
+  padding: 48px 48px 48px calc(48px + env(safe-area-inset-left));
+  max-width: 648px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    font-size: 28px;
+  }
+}
+
+.intro__link {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 200ms;
+}
+
+.intro__bottom {
+  margin-top: 100px;
+}
+
+.intro__link:hover {
+  color: var(--current-colour);
+}
+
+.intro--bold {
+  font-weight: 700;
+}
+
+.intro--light {
+  font-weight: 200;
+}
+
+.intro__colour {
+  color: var(--current-colour);
+}
