@@ -1,15 +1,15 @@
 :root {
   --bg-colour--light: #fff0ea;
   --text-colour-light: #3a2016;
-  --asterism-colour-light: #dfc4bb;
+  --text2-colour-light: #dfc4bb;
+  --text3-link-colour: #a18579;
   --bg-colour-dark: #2b211d;
   --text-colour-dark: #f9e5dd;
-  --asterism-colour-dark: #46362f;
+  --text2-colour-dark: #46362f;
   --bg-colour: var(--bg-colour--light);
   --text-colour: var(--text-colour-light);
-  --asterism-colour: var(--asterism-colour-light);
+  --text2-colour: var(--text2-colour-light);
   --link-colour: #ce7351;
-  --nav-link-colour: #a18579;
 
   font-family: 'Jost', sans-serif;
   color-scheme: light dark;
@@ -19,7 +19,7 @@
 :root:has(header input:checked) {
   --bg-colour: var(--bg-colour-dark);
   --text-colour: var(--text-colour-dark);
-  --asterism-colour: var(--asterism-colour-dark);
+  --text2-colour: var(--text2-colour-dark);
 }
 
 body {
@@ -105,7 +105,7 @@ h4 {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: var(--nav-link-colour);
+  color: var(--text3-link-colour);
 }
 
 nav {
@@ -119,7 +119,7 @@ nav {
 }
 
 nav a {
-  color: var(--nav-link-colour);
+  color: var(--text3-link-colour);
   text-decoration: none;
 }
 
@@ -152,7 +152,7 @@ a {
 }
 
 .asterism {
-  color: var(--asterism-colour);
+  color: var(--text2-colour);
   font-size: 60px;
   text-align: center;
 }
