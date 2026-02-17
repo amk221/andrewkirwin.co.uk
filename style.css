@@ -1,6 +1,15 @@
 :root {
-  --bg-color: #fff0ea;
-  --text-color: #3a2016;
+  --bg-colour--light: #fff0ea;
+  --text-colour-light: #3a2016;
+  --asterism-colour-light: #dfc4bb;
+  --bg-colour-dark: #2b211d;
+  --text-colour-dark: #f9e5dd;
+  --asterism-colour-dark: #46362f;
+  --bg-colour: var(--bg-colour--light);
+  --text-colour: var(--text-colour-light);
+  --asterism-colour: var(--asterism-colour-light);
+  --link-colour: #ce7351;
+  --nav-link-colour: #a18579;
 
   font-family: 'Jost', sans-serif;
   color-scheme: light dark;
@@ -8,15 +17,16 @@
 }
 
 :root:has(header input:checked) {
-  --bg-color: #2b211d;
-  --text-color: #f9e5dd;
+  --bg-colour: var(--bg-colour-dark);
+  --text-colour: var(--text-colour-dark);
+  --asterism-colour: var(--asterism-colour-dark);
 }
 
 body {
   margin: 8% auto;
   max-width: 768px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-colour);
+  color: var(--text-colour);
 }
 
 header {
@@ -81,7 +91,7 @@ nav {
 }
 
 nav a {
-  color: #a18579;
+  color: var(--nav-link-colour);
   text-decoration: none;
 }
 
@@ -89,7 +99,7 @@ nav a {
 :root:has(#work:target) a[href='#work'],
 :root:has(#about:target) a[href='#about'] {
   text-decoration: underline;
-  color: var(--text-color);
+  color: var(--text-colour);
 }
 
 :root:has(#about:target) #about {
@@ -110,7 +120,13 @@ nav a {
 }
 
 a {
-  color: #ce7351;
+  color: var(--link-colour);
+}
+
+.asterism {
+  color: var(--asterism-colour);
+  font-size: 60px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
