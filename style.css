@@ -167,7 +167,15 @@ a {
 }
 
 .article {
-  margin: 100px 0;
+  margin: 50px 0 0 0;
+}
+
+.article::after {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+  content: '⁂';
+  color: var(--text2-colour);
 }
 
 .article__top {
