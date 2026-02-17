@@ -123,6 +123,15 @@ nav a {
   text-decoration: none;
 }
 
+figure {
+  margin: 40px auto;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 4px;
+}
+
 :root:not(:has(:target)) a[href='#work'],
 :root:has(#work:target) a[href='#work'],
 :root:has(#about:target) a[href='#about'] {
