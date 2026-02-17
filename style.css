@@ -13,18 +13,10 @@
 }
 
 body {
-  /* margin: 8% 24%; */
   margin: 8% auto;
   max-width: 768px;
   background-color: var(--bg-color);
   color: var(--text-color);
-}
-
-@media (max-width: 768px) {
-  body {
-    margin-left: 12%;
-    margin-right: 12%;
-  }
 }
 
 header {
@@ -112,8 +104,25 @@ nav a {
   display: none;
 }
 
+#work,
+#about {
+  scroll-margin-top: 12vh;
+}
+
 a {
-  color: #244d51;
-  color: #496179;
   color: #ce7351;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 12%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
 }
