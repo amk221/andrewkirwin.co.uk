@@ -65,7 +65,7 @@ header span {
 @media (hover: hover) {
   header label:hover span {
     opacity: 1;
-    transition: opacity 150ms ease-out 800ms;
+    transition: opacity 150ms ease-out 500ms;
   }
 }
 
