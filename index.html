@@ -63,8 +63,44 @@
           <p>
             This happened in parallel with development on the existing product, and so, for a time there were two
             versions of Capsule running. The technical challenge was to ensure the customer couldn't tell. And to reduce
-            the boot time of the SPA as much as possible as the user may transition between the two.
+            the boot time of the <abbr title="Single Page Application">SPA</abbr> as much as possible as the user may
+            transition between the two.
           </p>
+
+          <ol class="timeline">
+            <li>
+              <time>2014</time>
+
+              <h4>Smooth rollout technique</h4>
+              <p>
+                Ported the most popular page to an Ember.js app. Users would enter the
+                <abbr title="Single Page Application">SPA</abbr> when clicking to view a contact only. But would
+                otherwise remain on the traditional <abbr title="Multi-Page Application">MPA</abbr>. Refreshing the
+                page would load the old <abbr title="Multi-Page Application">MPA</abbr> - giving users an escape hatch
+                if there was a problem with <abbr title="Single Page Application">SPA</abbr>.
+              </p>
+
+              <h4>Tackling performance issues</h4>
+              <p>
+                Due to component instantiation being expensive in Ember (we're talking version 1.13.2!), partials were
+                sometimes used instead (For example when rendering long lists or tables). This was harder to maintain,
+                but we knew they could be migrated over time as Ember performance improved.
+              </p>
+              <p>
+                For users who fell into the feature flag segment, the <abbr title="Single Page Application">SPA</abbr>
+                app was prefretched on the <abbr title="Multi-Page Application">MPA</abbr> login screen. So upon signing
+                in the app would already be loaded.
+              </p>
+            </li>
+            <li>
+              <time>2015</time>
+
+              <h4>Managing deprecations</h4>
+              <p>
+                The way user interactions changed in Ember, and we pushed to phase out use of <code>sendAction</code>.
+              </p>
+            </li>
+          </ol>
         </div>
       </article>
 
