@@ -69,31 +69,32 @@
 
           <ol class="timeline">
             <li>
-              <time>2014</time>
+              <time>2015</time>
 
-              <h4>Smooth rollout technique</h4>
+              <h4>Performance dashboard</h4>
               <p>
-                Ported the most popular page to an <a href="https://emberjs.com">Ember.js</a> app. Users would enter
-                the
-                <abbr title="Single Page Application">SPA</abbr> when clicking to view a contact only. But would
-                otherwise remain on the traditional <abbr title="Multi-Page Application">MPA</abbr>. Refreshing the
-                page would load the old <abbr title="Multi-Page Application">MPA</abbr> - giving users an escape hatch
-                if there was a problem with <abbr title="Single Page Application">SPA</abbr>.
+                Started capturing and sending performance metrics about route loading - First Paint to Full Render, and
+                capturing slow components. Sending the data to a NewRelic dashboard.
               </p>
 
-
-              <h4>Tackling performance issues</h4>
+              <h4>Upgrades & Managing deprecations</h4>
               <p>
-                Due to component instantiation being expensive in Ember (we're
-                talking version 1.13.2!), partials were
-                sometimes used instead (For example when rendering long lists or tables). This was harder to maintain,
-                but we knew they could be migrated over time as Ember performance
-                improved.
+                Upgraded <a href="https://emberjs.com">Ember.js</a> to version 2. The way user interactions changed in
+                Ember, which involved a sweeping
+                refactor from strings to the passing a closure instead.
+                I also phased out CoffeeScript.
               </p>
+
+              <h4>Integrations</h4>
               <p>
-                For users who fell into the feature flag segment, the <abbr title="Single Page Application">SPA</abbr>
-                app was prefretched on the <abbr title="Multi-Page Application">MPA</abbr> login screen. So upon signing
-                in the app would already be loaded.
+                Continued migrating the product to a <abbr title="Single Page Application">SPA</abbr>. Focusing
+                integrations with
+                third parties like <a href="https://zendesk.com">Zendesk</a>,
+                <a href="https://sage.com">Sage</a>,
+                <a href="https://freeagent.com">FreeAgent</a>,
+                <a href="https://mailchimp.com">Mailchimp</a>,
+                <a href="https://xero.com">Xero</a>, and
+                <a href="https://quickbooks.intuit.com">Quickbooks</a> etc.
               </p>
             </li>
             <li>
@@ -125,6 +126,35 @@
                 <a href="https://quickbooks.intuit.com">Quickbooks</a> etc.
               </p>
             </li>
+            <li>
+              <time>2014</time>
+
+              <h4>Smooth rollout technique</h4>
+              <p>
+                Ported the most popular page to an <a href="https://emberjs.com">Ember.js</a> app. Users would enter
+                the
+                <abbr title="Single Page Application">SPA</abbr> when clicking to view a contact only. But would
+                otherwise remain on the traditional <abbr title="Multi-Page Application">MPA</abbr>. Refreshing the
+                page would load the old <abbr title="Multi-Page Application">MPA</abbr> - giving users an escape hatch
+                if there was a problem with <abbr title="Single Page Application">SPA</abbr>.
+              </p>
+
+
+              <h4>Tackling performance issues</h4>
+              <p>
+                Due to component instantiation being expensive in Ember (we're
+                talking version 1.13.2!), partials were
+                sometimes used instead (For example when rendering long lists or tables). This was harder to maintain,
+                but we knew they could be migrated over time as Ember performance
+                improved.
+              </p>
+              <p>
+                For users who fell into the feature flag segment, the <abbr title="Single Page Application">SPA</abbr>
+                app was prefretched on the <abbr title="Multi-Page Application">MPA</abbr> login screen. So upon signing
+                in the app would already be loaded.
+              </p>
+            </li>
+
           </ol>
         </div>
       </article>
