@@ -25,6 +25,7 @@
 
 body {
   margin: 8% auto;
+  padding: 0 40px;
   max-width: 768px;
   background-color: var(--bg-colour);
   color: var(--text-colour);
