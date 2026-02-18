@@ -212,7 +212,14 @@ a {
 .timeline time {
   font-weight: 500;
   display: block;
-  margin-bottom: 20px;
+}
+
+.timeline h4 {
+  margin-top: 30px;
+}
+
+.timeline time + h4 {
+  margin-top: 20px;
 }
 
 .timeline li::before {

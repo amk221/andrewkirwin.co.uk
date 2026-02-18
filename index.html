@@ -80,6 +80,7 @@
                 if there was a problem with <abbr title="Single Page Application">SPA</abbr>.
               </p>
 
+
               <h4>Tackling performance issues</h4>
               <p>
                 Due to component instantiation being expensive in Ember (we're talking version 1.13.2!), partials were
@@ -95,9 +96,23 @@
             <li>
               <time>2015</time>
 
-              <h4>Managing deprecations</h4>
+              <h4>Performance dashboard</h4>
               <p>
-                The way user interactions changed in Ember, and we pushed to phase out use of <code>sendAction</code>.
+                Started capturing and sending performance metrics about route loading - First Paint to Full Render, and
+                capturing slow components. Sending the data to a NewRelic dashboard.
+              </p>
+
+              <h4>Upgrades & Managing deprecations</h4>
+              <p>
+                Upgraded Ember.js to version 2. The way user interactions changed in Ember, which involved a sweeping
+                refactor from strings to the passing a closure instead.
+                I also phased out CoffeeScript.
+              </p>
+
+              <h4>Integrations</h4>
+              <p>
+                Continued migrating the product to a SPA. Focusing integrations with
+                third parties like Zendesk, Sage, FreeAgent, Mailchimp, Xero, and Quickbooks etc.
               </p>
             </li>
           </ol>
