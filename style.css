@@ -23,6 +23,10 @@
   --text2-colour: var(--colour6);
 }
 
+::selection {
+  background-color: var(--colour4);
+}
+
 body {
   margin: 8% auto;
   padding: 0 40px;
