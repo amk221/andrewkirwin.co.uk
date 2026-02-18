@@ -192,7 +192,8 @@ a {
 
 @media (max-width: 768px) {
   body {
-    margin: 20% 12%;
+    margin: 20% 6%;
+    padding: 0 24px;
   }
 
   h1 {
