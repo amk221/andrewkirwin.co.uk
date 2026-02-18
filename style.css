@@ -1,15 +1,16 @@
 :root {
-  --bg-colour--light: #fff0ea;
-  --text-colour-light: #3a2016;
-  --text2-colour-light: #dfc4bb;
-  --text3-link-colour: #a18579;
-  --bg-colour-dark: #2b211d;
-  --text-colour-dark: #f9e5dd;
-  --text2-colour-dark: #46362f;
-  --bg-colour: var(--bg-colour--light);
-  --text-colour: var(--text-colour-light);
-  --text2-colour: var(--text2-colour-light);
-  --link-colour: #ce7351;
+  --colour1: #fff0ea;
+  --colour2: #f9e5dd;
+  --colour3: #dfc4bb;
+  --colour4: #ce7351;
+  --colour5: #a18579;
+  --colour6: #46362f;
+  --colour7: #3a2016;
+  --colour8: #2b211d;
+  --bg-colour: var(--colour1);
+  --text-colour: var(--colour7);
+  --text2-colour: var(--colour3);
+  --link-colour: var(--colour4);
 
   font-family: 'Jost', sans-serif;
   color-scheme: light dark;
@@ -17,9 +18,9 @@
 }
 
 :root:has(header input:checked) {
-  --bg-colour: var(--bg-colour-dark);
-  --text-colour: var(--text-colour-dark);
-  --text2-colour: var(--text2-colour-dark);
+  --bg-colour: var(--colour8);
+  --text-colour: var(--colour2);
+  --text2-colour: var(--colour6);
 }
 
 body {
@@ -105,7 +106,7 @@ h4 {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: var(--text3-link-colour);
+  color: var(--colour5);
 }
 
 nav {
@@ -119,7 +120,7 @@ nav {
 }
 
 nav a {
-  color: var(--text3-link-colour);
+  color: var(--colour5);
   text-decoration: none;
 }
 
