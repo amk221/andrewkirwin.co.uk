@@ -63,8 +63,99 @@
           <p>
             This happened in parallel with development on the existing product, and so, for a time there were two
             versions of Capsule running. The technical challenge was to ensure the customer couldn't tell. And to reduce
-            the boot time of the SPA as much as possible as the user may transition between the two.
+            the boot time of the <abbr title="Single Page Application">SPA</abbr> as much as possible as the user may
+            transition between the two.
           </p>
+
+          <ol class="timeline">
+            <li>
+              <time>2015</time>
+
+              <h4>Performance dashboard</h4>
+              <p>
+                Started capturing and sending performance metrics about route loading - First Paint to Full Render, and
+                capturing slow components. Sending the data to a NewRelic dashboard.
+              </p>
+
+              <h4>Upgrades & Managing deprecations</h4>
+              <p>
+                Upgraded <a href="https://emberjs.com">Ember.js</a> to version 2. The way user interactions changed in
+                Ember, which involved a sweeping
+                refactor from strings to the passing a closure instead.
+                I also phased out CoffeeScript.
+              </p>
+
+              <h4>Integrations</h4>
+              <p>
+                Continued migrating the product to a <abbr title="Single Page Application">SPA</abbr>. Focusing
+                integrations with
+                third parties like <a href="https://zendesk.com">Zendesk</a>,
+                <a href="https://sage.com">Sage</a>,
+                <a href="https://freeagent.com">FreeAgent</a>,
+                <a href="https://mailchimp.com">Mailchimp</a>,
+                <a href="https://xero.com">Xero</a>, and
+                <a href="https://quickbooks.intuit.com">Quickbooks</a> etc.
+              </p>
+            </li>
+            <li>
+              <time>2015</time>
+
+              <h4>Performance dashboard</h4>
+              <p>
+                Started capturing and sending performance metrics about route loading - First Paint to Full Render, and
+                capturing slow components. Sending the data to a NewRelic dashboard.
+              </p>
+
+              <h4>Upgrades & Managing deprecations</h4>
+              <p>
+                Upgraded <a href="https://emberjs.com">Ember.js</a> to version 2. The way user interactions changed in
+                Ember, which involved a sweeping
+                refactor from strings to the passing a closure instead.
+                I also phased out CoffeeScript.
+              </p>
+
+              <h4>Integrations</h4>
+              <p>
+                Continued migrating the product to a <abbr title="Single Page Application">SPA</abbr>. Focusing
+                integrations with
+                third parties like <a href="https://zendesk.com">Zendesk</a>,
+                <a href="https://sage.com">Sage</a>,
+                <a href="https://freeagent.com">FreeAgent</a>,
+                <a href="https://mailchimp.com">Mailchimp</a>,
+                <a href="https://xero.com">Xero</a>, and
+                <a href="https://quickbooks.intuit.com">Quickbooks</a> etc.
+              </p>
+            </li>
+            <li>
+              <time>2014</time>
+
+              <h4>Smooth rollout technique</h4>
+              <p>
+                Ported the most popular page to an <a href="https://emberjs.com">Ember.js</a> app. Users would enter
+                the
+                <abbr title="Single Page Application">SPA</abbr> when clicking to view a contact only. But would
+                otherwise remain on the traditional <abbr title="Multi-Page Application">MPA</abbr>. Refreshing the
+                page would load the old <abbr title="Multi-Page Application">MPA</abbr> - giving users an escape hatch
+                if there was a problem with <abbr title="Single Page Application">SPA</abbr>.
+              </p>
+
+
+              <h4>Tackling performance issues</h4>
+              <p>
+                Due to component instantiation being expensive in Ember (we're
+                talking version 1.13.2!), partials were
+                sometimes used instead (For example when rendering long lists or tables). This was harder to maintain,
+                but we knew they could be migrated over time as Ember performance
+                improved.
+              </p>
+              <p>
+                For users who fell into the feature flag segment, the <abbr title="Single Page Application">SPA</abbr>
+                app was prefretched on the <abbr title="Multi-Page Application">MPA</abbr> login screen. So upon signing
+                in the app would already be loaded.
+              </p>
+            </li>
+
+          </ol>
         </div>
       </article>
 
@@ -93,8 +184,8 @@
             Prototyping websites, building hybrid mobile applications, and
             even art installations for an impressive client list including
             <a href="https://spotify.com">Spotify</a>, <a href="https://universalmusic.com">Universal Music</a>, <a
-              href="https://davidlloyd.co.uk">David Lloyd</a>, <a href="https://nus.org.uk">NUS</a>, <a
-              href="https://dominomusic.com">Domino Records</a>
+              href="https://davidlloyd.co.uk">David Lloyd</a>, <a href="https://nus.org.uk"><abbr
+                title="National Union of Students">NUS</abbr></a>, <a href="https://dominomusic.com">Domino Records</a>
             and more.
           </p>
           <p>
@@ -137,7 +228,8 @@
           <p>
             For 4 years I was the sole developer responsible for writing and managing the <abbr
               title="Cascading Style Sheets">CSS</abbr> and
-            JavaScript for the UK's #1 Flatshare website. I'm proud to say some of the code is still in production
+            JavaScript for the <abbr title="United Kingdom">UK</abbr>'s #1 Flatshare website. I'm proud to say some of
+            the code is still in production
             today.
           </p>
           <p>
@@ -169,7 +261,8 @@
         </div>
         <div class="article__bottom">
           <p>
-            I worked on large scale e-commerce websites, including AJAXifying
+            I worked on large scale e-commerce websites, including <abbr
+              title="Asynchronous JavaScript and XML">AJAX</abbr>ifying
             Flight and Hotel search results for the well known holiday booking site
             <a href="https://onthebeach.co.uk">OnTheBeach.co.uk</a>.
           </p>
@@ -250,10 +343,12 @@
       </p>
 
       <p>
-        Earlier in my career, most of this work was a low-level, intricate craft. With the advent of AI, the emphasis
+        Earlier in my career, most of this work was a low-level, intricate craft. With the advent of <abbr
+          title="Artificial Intelligence">AI</abbr>, the emphasis
         has
         shifted: I still care deeply about naming, conventions, structure, and the right abstractions etc, but I now
-        spend more of my energy shaping problems, setting constraints, and reviewing AI-generated changes so the
+        spend more of my energy shaping problems, setting constraints, and reviewing <abbr
+          title="Artificial Intelligence">AI</abbr>-generated changes so the
         systems stay coherent over time.
       </p>
 
@@ -261,8 +356,8 @@
         At the moment, my work centres on the hugely popular <a href="https://andrewkirwin.co.uk">Capsule</a> <abbr
           title="Customer Relationship Manager">CRM</abbr>,
         built using modern
-        <a href="https://emberjs.com/">Ember.js</a>, with a
-        <a href="https://scala-lang.org/">Scala</a> backend.
+        <a href="https://emberjs.com">Ember.js</a>, with a
+        <a href="https://scala-lang.org">Scala</a> backend.
       </p>
 
       <p>

@@ -190,6 +190,50 @@ a {
   align-items: baseline;
 }
 
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  border-left: 1px solid var(--colour3);
+}
+
+.timeline li {
+  position: relative;
+  margin: 0 0 0 34px;
+}
+
+.timeline li:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.timeline time {
+  font-weight: 500;
+  display: block;
+}
+
+.timeline h4 {
+  margin-top: 30px;
+}
+
+.timeline time + h4 {
+  margin-top: 20px;
+}
+
+.timeline li::before {
+  display: block;
+  content: '';
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: -40px;
+  top: 7px;
+  border-radius: 50%;
+  background-color: var(--colour3);
+}
+
 @media (max-width: 768px) {
   body {
     margin: 20% 6%;
