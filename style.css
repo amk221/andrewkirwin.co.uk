@@ -8,6 +8,7 @@
   --colour7: #3a2016;
   --colour8: #2b211d;
   --bg-colour: var(--colour1);
+  --border-colour: var(--colour2);
   --text-colour: var(--colour7);
   --text2-colour: var(--colour3);
   --link-colour: var(--colour4);
@@ -19,6 +20,7 @@
 
 :root:has(header input:checked) {
   --bg-colour: var(--colour8);
+  --border-colour: var(--colour6);
   --text-colour: var(--colour2);
   --text2-colour: var(--colour6);
 }
@@ -130,12 +132,26 @@ nav a {
 }
 
 figure {
-  margin: 40px auto;
+  margin: 20px auto;
+  /* border-radius: 4px;
+  padding: 1px;
+  border: 1px solid var(--border-colour);
+  overflow: hidden; */
+  display: block;
+  padding: 20px;
 }
 
 figure img {
   width: 100%;
-  border-radius: 4px;
+  display: block;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--colour5);
+  margin-top: 10px;
 }
 
 :root:not(:has(:target)) a[href='#work'],
