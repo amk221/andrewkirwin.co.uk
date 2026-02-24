@@ -73,26 +73,15 @@
 
               <h4>Bye Bye Mixins</h4>
               <p>
-                Mixins were the idiomatic way to share behavior across pages. I migrated the code to services
-                so that routes delegate shared logic instead of inheriting it. This was required for native-class
-                compatibility and improved maintainability through composition instead of inheritance.
+                Migrated shared route logic from mixins to services, enabling native-class compatibility and improving
+                maintainability by favoring composition over inheritance.
               </p>
 
-              <h4>Multple Sales Pipeliens</h4>
+              <h4>Project work</h4>
               <p>
-                I built the front end for a migration that enabled Multiple Sales Pipelines (the <abbr
-                  title="Customer Relationship Manager">CRM</abbr> previously
-                supported only one). The flow guided users to fix pre-migration issues, showed a preview of the
-                resulting configuration, and then ran the migration as an async job with polling and progress feedback.
-              </p>
-
-              <h4>Settings area</h4>
-              <p>
-                The rest of the year focused on continuing the <abbr title="JavaServer Faces">JSF</abbr>-to-Ember
-                migration, particularly in the Settings
-                area which I chose to implement as an Ember Engine (a mountable mini-app) to keep it out of the main app
-                payload. While Engines weren't primarily intended for this use case, it effectively delivered what we
-                now achieve with route splitting.
+                I built the front end to allow users to migrate from a single Sales Pipeline to multiple Sales
+                Pipelines. It guided them to fix pre-migration issues, showed a preview of the resulting configuration,
+                and then ran the migration as an async job with polling and progress feedback.
               </p>
             </li>
 
