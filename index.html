@@ -79,6 +79,12 @@
                 date, boolean, money, and custom-field data types. I also implemented filter
                 serialisation/deserialisation for local storage and resilient restore logic to handle stale filters.
               </p>
+
+              <h4>Maintainance work</h4>
+              <p>
+                Configured parallel test execution for faster runs, replaced PhantomJS with Headless Chrome, and
+                migrated dependencies from Bower to npm.
+              </p>
             </li>
 
             <li>
@@ -165,6 +171,13 @@
                 if there was a problem with <abbr title="Single Page Application">SPA</abbr>.
               </p>
 
+
+              <h4>Route gating</h4>
+              <p>
+                Improved how the Ember app was being rolled out by updating our Link component, such that it would route
+                you within in the SPA or turf you out to the MPA version, based on a feature flag. Wrapped with tests so
+                that unfinished pages did not accidently go into production
+              </p>
 
               <h4>Tackling performance issues</h4>
               <p>

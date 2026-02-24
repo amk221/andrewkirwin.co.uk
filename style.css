@@ -216,12 +216,12 @@ a {
   border-left: 1px solid var(--colour3);
 }
 
-.timeline li {
+.timeline > li {
   position: relative;
   margin: 0 0 0 34px;
 }
 
-.timeline li:not(:last-child) {
+.timeline > li:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -238,7 +238,7 @@ a {
   margin-top: 20px;
 }
 
-.timeline li::before {
+.timeline > li::before {
   display: block;
   content: '';
   width: 11px;
@@ -248,6 +248,25 @@ a {
   top: 7px;
   border-radius: 50%;
   background-color: var(--colour3);
+}
+
+p {
+  margin: 16px 0;
+}
+
+ul {
+  margin: 16px 0;
+  padding: 0;
+}
+
+ul > li {
+  margin-left: 20px;
+  padding-left: 4px;
+  list-style: disc;
+}
+
+ul > li::marker {
+  color: var(--colour3);
 }
 
 @media (max-width: 768px) {
