@@ -8,8 +8,9 @@
   --colour7: #3a2016;
   --colour8: #2b211d;
   --colour9: #ecd5cc;
+  --colour10: #745e54;
   --bg-colour: var(--colour1);
-  --border-colour: var(--colour2);
+  --border-colour: var(--colour9);
   --text-colour: var(--colour7);
   --text2-colour: var(--colour3);
   --link-colour: var(--colour4);
@@ -21,7 +22,7 @@
 
 :root:has(header input:checked) {
   --bg-colour: var(--colour8);
-  --border-colour: var(--colour6);
+  --border-colour: var(--colour10);
   --text-colour: var(--colour2);
   --text2-colour: var(--colour6);
 }
@@ -210,7 +211,7 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  border-left: 1px solid var(--colour9);
+  border-left: 1px solid var(--border-colour);
 }
 
 .timeline > li {
