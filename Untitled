@@ -1,1 +1,0 @@
-Designed and implemented a reusable pagination abstraction (view model + factory) driven by Link headers, decoupling pagination logic from both the UI and Ember Data while enabling use across arbitrary arrays.
