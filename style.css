@@ -7,7 +7,10 @@
   --colour6: #46362f;
   --colour7: #3a2016;
   --colour8: #2b211d;
+  --colour9: #ecd5cc;
+  --colour10: #745e54;
   --bg-colour: var(--colour1);
+  --border-colour: var(--colour9);
   --text-colour: var(--colour7);
   --text2-colour: var(--colour3);
   --link-colour: var(--colour4);
@@ -19,6 +22,7 @@
 
 :root:has(header input:checked) {
   --bg-colour: var(--colour8);
+  --border-colour: var(--colour10);
   --text-colour: var(--colour2);
   --text2-colour: var(--colour6);
 }
@@ -130,16 +134,27 @@ nav a {
 }
 
 figure {
-  margin: 40px auto;
+  margin: 20px auto;
+  display: block;
+  padding: 20px;
 }
 
 figure img {
   width: 100%;
-  border-radius: 4px;
+  display: block;
+  border-radius: 6px;
+}
+
+figcaption {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--colour5);
+  margin-top: 10px;
 }
 
 :root:not(:has(:target)) a[href='#work'],
 :root:has(#work:target) a[href='#work'],
+:root:has(#capsule:target) a[href='#work'],
 :root:has(#about:target) a[href='#about'] {
   text-decoration: underline;
   color: var(--text-colour);
@@ -170,6 +185,7 @@ a {
   color: var(--text2-colour);
   font-size: 60px;
   text-align: center;
+  margin: 1em;
 }
 
 .article {
@@ -188,6 +204,78 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.timeline {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  border-left: 1px solid var(--border-colour);
+}
+
+:root:has(#capsule:target) .timeline {
+  display: block;
+}
+
+:root:has(#capsule:target) .read-more {
+  display: none;
+}
+
+.timeline > li {
+  position: relative;
+  margin: 0 0 0 34px;
+}
+
+.timeline > li:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.timeline time {
+  font-weight: 500;
+  display: block;
+}
+
+.timeline h4 {
+  margin-top: 30px;
+}
+
+.timeline time + h4 {
+  margin-top: 20px;
+}
+
+.timeline > li::before {
+  display: block;
+  content: '';
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: -40px;
+  top: 7px;
+  border-radius: 50%;
+  background-color: var(--colour3);
+}
+
+p {
+  margin: 16px 0;
+}
+
+ul {
+  margin: 16px 0;
+  padding: 0;
+}
+
+ul > li {
+  margin-left: 20px;
+  padding-left: 4px;
+  list-style: disc;
+}
+
+ul > li::marker {
+  color: var(--colour3);
 }
 
 @media (max-width: 768px) {
