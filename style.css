@@ -218,6 +218,13 @@ a {
   border-left: 1px solid var(--border-colour);
 }
 
+@media (width <= 768px) {
+  .timeline {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+
 :root:has(#capsule:target) .timeline {
   display: block;
 }
